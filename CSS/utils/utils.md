@@ -31,7 +31,27 @@
 }
 ```
 
+## Card Caroussel 
+![Card Caroussel ](images/Card_Caroussel.png)
 
+```css
+.container{
+    display:flex;
+}
+.card{
+    position:relative;
+    left:0px;
+}
+.card:not(:first-child){
+    margin-left:-50px;
+}
+.card:hover{
+    transform:translateY(-20px);
+}
+.card:hover ~ .card{
+    left:50px;
+}
+```
 
 
 # Tools
