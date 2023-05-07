@@ -53,6 +53,29 @@
 }
 ```
 
+## Shake on Invalid Input
+![Shake Invalid Input](images/Shake_Invalid_Input.png)
+```html
+    <input type="text" placeholder="Enter name" pattern="[a-z]*">
+```
+```css
+    input:invalid {
+        border : 2px solid red;
+        animation : shake 0.2s 2;
+    }
+    @keyframes shake {
+        25% {
+            translate : 6px 0;
+        }
+        50% {
+             translate : -6px 0;
+        }
+        75% {
+            translate : 6px 0;
+        }
+    }
+```
+
 
 # Tools
 
